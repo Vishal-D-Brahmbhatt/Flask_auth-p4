@@ -43,3 +43,9 @@ def test_request_register(client):
     response = client.get("/register")
     assert response.status_code == 200
     assert b"Register" in response.data
+
+
+def user_dashboard_access_approved(client):
+    response = client.get("/dashboard")
+    assert response.status_code == 200
+    return client.get('/dashboard', follow_redirects=True)
