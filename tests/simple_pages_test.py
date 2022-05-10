@@ -49,12 +49,12 @@ def user_dashboard_access_approved(client):
     response = client.get("/dashboard")
     assert response.status_code == 200
     return client.get('/dashboard', follow_redirects=True)
-#
-#
-# def user_dashboard_access_deny(client):
-#     response = client.get("/dashboard")
-#     assert response.status_code == 403
-#     return client.get('/dashboard', follow_redirects=False)
+
+
+def user_dashboard_access_deny(client):
+    response = client.get("/dashboard")
+    assert response.status_code == 403
+    return client.get('/dashboard', follow_redirects=False)
 #
 #
 # def test_upload_csvfile_access_denied(client):
