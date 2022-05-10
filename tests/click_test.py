@@ -1,8 +1,8 @@
 # import logging
 import os
-# from app.db import config
+from app.db import config
 from click.testing import CliRunner
-# from pathlib import Path
+from pathlib import Path
 from app import create_database
 
 runner = CliRunner()
@@ -16,3 +16,12 @@ def test_create_database():
     dbdir = os.path.join(root, '../database')
     # make a directory if it doesn't exist
     assert os.path.exists(dbdir) is True
+
+
+def test_create_log_folder():
+    logdir = config.Config.LOG_DIR
+    pt = Path(logdir)
+    if pt.is_file():
+        print(f'LOGS exists')
+    else:
+        print(f'LOGS not present')
