@@ -55,8 +55,8 @@ def user_dashboard_access_deny(client):
     response = client.get("/dashboard")
     assert response.status_code == 403
     return client.get('/dashboard', follow_redirects=False)
-#
-#
-# def test_upload_csvfile_access_denied(client):
-#     response = client.get("/upload", follow_redirects=False)
-#     assert response.status_code == 404
+
+
+def test_upload_csvfile_access_denied(client):
+    response = client.get("/upload", follow_redirects=False)
+    assert response.status_code == 404
