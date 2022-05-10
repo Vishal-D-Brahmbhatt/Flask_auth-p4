@@ -8,10 +8,10 @@ def test_calculator_is_instance():
     assert isinstance(calculator, Calculator)
 
 
-# def test_calculator_get_result_method():
-#     """Testing the Calculator"""
-#     calculator = Calculator()
-#     assert calculator.get_result() == 0
+def test_calculator_get_result_method():
+    """Testing the Calculator"""
+    calculator = Calculator()
+    assert calculator.get_result() == 0
 #
 #
 # def test_calculator_result_property():
