@@ -25,3 +25,13 @@ def test_create_log_folder():
         print(f'LOGS exists')
     else:
         print(f'LOGS not present')
+
+
+def test_create_log_folder():
+    logdir = config.Config.LOG_DIR
+    pt = Path(logdir)
+
+    if pt.is_file():
+        print(f'LOGS exists')
+    else:
+        print(f'LOGS not present')
