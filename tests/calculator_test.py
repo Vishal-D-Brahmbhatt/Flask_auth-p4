@@ -22,12 +22,12 @@ def test_calculator_result_property():
     calc2.result = 6
     assert calc1.result == 5
     assert calc2.result == 6
-#
-#
-# def test_calculator_add_method():
-#     """Testing the Calculator"""
-#     calculator = Calculator()
-#     assert calculator.add(1) == 1
+
+
+def test_calculator_add_method():
+    """Testing the Calculator"""
+    calculator = Calculator()
+    assert calculator.add(1) == 1
 #
 #
 # def test_calculator_subtract_method():
