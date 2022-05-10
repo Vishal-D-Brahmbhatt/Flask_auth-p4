@@ -1,11 +1,11 @@
 # Project Setup
 
-[![Production Workflow](https://github.com/Vishal-D-Brahmbhatt/Flask_auth_p4/actions/workflows/prod.yml/badge.svg)](https://github.com/Vishal-D-Brahmbhatt/Flask_auth_p3/actions/workflows/prod.yml)
+[![Production Workflow](https://github.com/Vishal-D-Brahmbhatt/Flask_auth_p4/actions/workflows/prod.yml/badge.svg)](https://github.com/Vishal-D-Brahmbhatt/Flask_auth_p4/actions/workflows/prod.yml)
 
 * [Production Deployment](https://vishalproject2prod.herokuapp.com/)
 
 
-[![Development Workflow](https://github.com/Vishal-D-Brahmbhatt/Flask_auth_p4/actions/workflows/dev.yml/badge.svg)](https://github.com/Vishal-D-Brahmbhatt/Flask_auth_p3/actions/workflows/dev.yml)
+[![Development Workflow](https://github.com/Vishal-D-Brahmbhatt/Flask_auth_p4/actions/workflows/dev.yml/badge.svg)](https://github.com/Vishal-D-Brahmbhatt/Flask_auth_p4/actions/workflows/dev.yml)
 
 * [Developmental Deployment](https://vishalproject2dev.herokuapp.com/)
 
