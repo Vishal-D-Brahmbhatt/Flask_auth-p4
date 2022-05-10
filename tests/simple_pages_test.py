@@ -38,11 +38,11 @@ def test_request_page_not_found(client):
     assert response.status_code == 404
 
 
-# def test_request_register(client):
-#     """This makes the register page"""
-#     response = client.get("/register")
-#     assert response.status_code == 200
-#     assert b"Register" in response.data
+def test_request_register(client):
+    """This makes the register page"""
+    response = client.get("/register")
+    assert response.status_code == 200
+    assert b"Register" in response.data
 #
 #
 # def user_dashboard_access_approved(client):
