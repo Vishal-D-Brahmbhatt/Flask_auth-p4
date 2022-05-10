@@ -43,3 +43,21 @@ def test_adding_user(application):
         db.session.delete(user)
         assert db.session.query(User).count() == 0
         assert db.session.query(Song).count() == 0
+
+
+def test_uploading_files(application, client):
+    log = logging.getLogger("myApp")
+    with application.app_context():
+        assert db.session.query(User).count() == 0
+        assert db.session.query(Song).count() == 0
+
+    # root = config.Config.BASE_DIR
+    # Filecsv = '/music.csv'
+    Flupload = config.Config.UPLOAD_FOLDER
+    uploadFl = os.path.join(Flupload)
+    uploadFile = os.path.join(uploadFl, '/music.csv')
+    assert os.path.exists(uploadFl) is True
+
+    resp = client.post('/songs/upload', data=uploadFile, follow_redirects=True)
+
+    assert resp.status_code == 400
