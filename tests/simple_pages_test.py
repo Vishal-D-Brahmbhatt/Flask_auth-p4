@@ -30,14 +30,14 @@ def test_request_page1(client):
     response = client.get("/welcome")
     assert response.status_code == 200
     assert b"Welcome" in response.data
-#
-#
-# def test_request_page_not_found(client):
-#     """This makes the index page"""
-#     response = client.get("/page5")
-#     assert response.status_code == 404
-#
-#
+
+
+def test_request_page_not_found(client):
+    """This makes the index page"""
+    response = client.get("/page5")
+    assert response.status_code == 404
+
+
 # def test_request_register(client):
 #     """This makes the register page"""
 #     response = client.get("/register")
