@@ -6,7 +6,7 @@
     <div id="row">
         <h2>Dashboard</h2>
         <p>Welcome: {{ current_user.email }}</p>
-        <p>BALANCE: {{ current_user.bal }}</p>
+        <p>THE BALANCE IS: {{ current_user.bal }}</p>
         <p class="fs-6">THE TRANSACTIONS ARE:</p>
 
         {{ render_table(data,titles,show_actions=True, table_classes='table-striped', header_classes='thead-dark', responsive=True, responsive_class='table-responsive-sm', model=User,
