@@ -45,7 +45,7 @@ def transactions_upload():
         form.file.data.save(filepath)
         # user = current_user
         trans_list = []
-        current_user.bal = 0
+        # current_user.bal = 0
         with open(filepath,encoding='utf-8-sig') as file:
             csv_file = csv.DictReader(file)
             for row in csv_file:
