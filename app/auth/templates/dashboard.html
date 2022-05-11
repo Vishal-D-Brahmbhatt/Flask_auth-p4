@@ -6,10 +6,8 @@
     <div id="row">
         <h2>Dashboard</h2>
         <p>Welcome: {{ current_user.email }}</p>
-        <p class="fs-6">THE SONGS ARE:</p>
-{#        {{ render_table(data) }}#}
-{#        {% from 'bootstrap5/pagination.html' import render_pagination %}#}
-{#        {{ render_pagination(pagination) }}#}
+        <p>BALANCE: {{ current_user.bal }}</p>
+        <p class="fs-6">THE TRANSACTIONS ARE:</p>
 
         {{ render_table(data,titles,show_actions=True, table_classes='table-striped', header_classes='thead-dark', responsive=True, responsive_class='table-responsive-sm', model=User,
             view_url=retrieve_url,
