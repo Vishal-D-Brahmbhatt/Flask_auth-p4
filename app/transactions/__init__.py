@@ -49,7 +49,7 @@ def transactions_upload():
         with open(filepath,encoding='utf-8-sig') as file:
             csv_file = csv.DictReader(file)
             for row in csv_file:
-                current_user.bal += calculateBalance.add(int(row['AMOUNT']))
+                current_user.bal = calculateBalance.add(int(row['AMOUNT']))
                 trans_list.append(Transaction(row['AMOUNT'], row['TYPE'], current_user.bal))
 
         current_user.transactions = trans_list
