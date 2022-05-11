@@ -20,7 +20,7 @@ def create_database():
 
 @click.command(name='create-log-folder')
 @with_appcontext
-def create_database():
+def create_log():
     # get root directory of project
     root = os.path.dirname(os.path.abspath(__file__))
     # set the name of the apps log folder to logs
